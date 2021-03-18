@@ -31,5 +31,5 @@
           PRIMARY KEY (`id`)
         ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
         ```  
-     ¹ If on Windows, you need to set the full directory "xampp/mysql/bin" in "path" on "environment variables")
+     ¹ If on Windows, you need to set the full directory "xampp/mysql/bin" in "path" on "environment variables"
 - Open the browser and access "localhost/web"
