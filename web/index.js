@@ -21,6 +21,8 @@ $(document).ready(function () {
         window.modal.find('input[name=cpf]').val(cpf);
         window.modal.find('input[name=birth]').val(birth);
         window.modal.find('select').val(source_id);
+
+        enableAllTooltips();
     });
 
     // On hide modal, cache fields and unset clicked id
@@ -40,6 +42,8 @@ $(document).ready(function () {
 
         $('#clicked').attr('id', null);
     });
+
+    enableAllTooltips();
 });
 
 // Show the form modal and sets 'clicked' as the id of the clicked doctor card
@@ -122,4 +126,8 @@ function onSubmitForm(event) {
             });
         }
     });
+}
+
+function enableAllTooltips() {
+    $('[data-bs-toggle="tooltip"]').tooltip();
 }
