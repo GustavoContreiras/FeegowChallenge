@@ -11,10 +11,10 @@
       - Click on "Server" -> "Data Import"  
       - Select "Import from Self-Contained File"  
       - Set the "database.sql" file path  
-      - Click on "Start Import"
+      - Click on "Start Import"  
       - Click on the "refresh icon" and check that the "feegow" database was created with the table "schedules"
      
-    2) Use the command line (if on Windows, you need to set the full directory "xampp/mysql/bin" in "path" on "environment variables"):  
+    2) Use the command line*:  
       - Execute `mysql -u root` on terminal to login on MariaDB  
       - Copy, paste and execute the following commands:  
         ```
@@ -31,4 +31,5 @@
           PRIMARY KEY (`id`)
         ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
         ```
+      - * If on Windows, you need to set the full directory "xampp/mysql/bin" in "path" on "environment variables")
 - Open the browser and access "localhost/web"
