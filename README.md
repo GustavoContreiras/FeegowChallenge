@@ -7,7 +7,7 @@
 - Now you have an PHP server and a MySQL database running on your machine
 - Create a table in the database, you have two options:  
     1) Download and install MySQL Workbench:  
-      - Click on "Database" -> "Connect to Database..." and press "OK"
+      - Click on "Database" -> "Connect to Database..." and press "OK"  
       - Click on "Server" -> "Data Import"  
       - Select "Import from Self-Contained File"  
       - Set the "database.sql" file path  
