@@ -1,6 +1,6 @@
 # Feegow Challenge
 
-- Download XAMPP from www.apachefriends.org & install it.
+- Download XAMPP from www.apachefriends.org and install it.
 - Download this repository
 - Copy "web" folder from this repository to "xampp/htdocs/" installation directory
 - Open XAMPP Control Panel and click on "Start" on "Apache" and "MySQL" buttons row
@@ -14,7 +14,7 @@
       - Click on the "refresh icon" and check that the "feegow" database was created with the table "schedules"
      
     2) Use the command line (if on Windows, you need to set the full directory "xampp/mysql/bin" in "path" on "environment variables"):  
-      - Execute `mysql -u root` on terminal to login on MariaDB
+      - Execute `mysql -u root` on terminal to login on MariaDB  
       - Copy, paste and execute the following commands:  
         ```
         CREATE DATABASE feegow;  
