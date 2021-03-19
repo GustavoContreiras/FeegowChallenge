@@ -27,8 +27,8 @@
                             <select class="form-select" name="source">
                                 <option value="" selected></option>
 
-                                <?php foreach (get_patients_mock() as $patient) { 
-                                    echo '<option value="'.$patient['patient_id'].'">'.$patient['nome'].'</option>';
+                                <?php foreach (get_patients() as $patient) { 
+                                    echo '<option value="'.$patient['origem_id'].'">'.$patient['nome_origem'].'</option>';
                                 } ?>
 
                             </select></div>

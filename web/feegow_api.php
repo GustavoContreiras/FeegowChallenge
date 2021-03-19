@@ -89,7 +89,7 @@ function get_patients() {
     $curl = curl_init();
 
     curl_setopt_array($curl, [
-        CURLOPT_URL => "https://api.feegow.com/v1/api/patient/list",
+        CURLOPT_URL => "https://api.feegow.com/v1/api/patient/list-sources",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
@@ -123,16 +123,6 @@ function get_patients() {
     }
 
     return array();
-}
-
-function get_patients_mock() {
-    return array(
-        array("patient_id" => 9, "nome" => "ANA CAROLINA GOMES REBELO MELO"),
-        array("patient_id" => 10, "nome" => "ADRIANA GONDIM VIEIRA GONÇALVES"),
-        array("patient_id" => 11, "nome" => "ARTHUR CESAR DANTAS DA SILVA"),
-        array("patient_id" => 12, "nome" => "BRENDA RIBEIRO GIRAO"),
-        array("patient_id" => 13, "nome" => "INGRID RIBEIRO TAVARES")
-    );
 }
 
 ?>
