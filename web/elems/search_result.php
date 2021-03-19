@@ -1,4 +1,11 @@
-<div class="col-auto mt-3 d-none" professional-id="<?php echo $professional_id ?>" specialty-id="<?php echo $specialty_id ?>">
+<div class="col-auto mt-3 d-none" professional-id="<?php echo $professional_id ?>" specialty-ids="<?php 
+        $str = '';
+        foreach($specialties as $specialty) {
+            $specialty_id = $specialty['especialidade_id'];
+            $str = $str . $specialty_id . ', ';
+        }
+        echo substr($str, 0, -2);
+    ?>">
     <div class="bg-light py-2 px-0" style="width: 300px;box-shadow: 1px 1px 20px 0px;border-radius: 15px;border-width: 0px;border-style: solid;">
         <div class="row g-0 align-items-center">
             <div class="col-3 px-2"><img class="border rounded-pill border-dark" src="assets/img/blank-avatar.png" width="64px" height="64px" alt="Foto"></div>

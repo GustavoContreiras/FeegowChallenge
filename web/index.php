@@ -45,12 +45,11 @@
 
                 <?php foreach (get_professionals() as $professional) { 
                     $professional_id = $professional['profissional_id']; 
-                    $specialties = $professional['especialidades'][0] ?? null;
+                    $specialties = $professional['especialidades'] ?? null;
                     if ($specialties) {
-                        $specialty_id = $specialties['especialidade_id']; 
                         $nome = $professional['nome'];
                         $crm = $professional['documento_conselho'];
-                        if ($nome && $crm && $specialty_id) {
+                        if ($nome && $crm) {
                             include('elems/search_result.php');
                         }
                     }

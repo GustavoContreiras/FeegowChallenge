@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     window.modal = $('.modal');
 
     // On show modal, set fields
@@ -65,7 +64,9 @@ function onSelectSpecialty(specialty_id) {
 
     for (const result of results) {
         const elem = $(result);
-        if (elem.attr('specialty-id') == specialty_id) {
+        const specialtyIds = elem.attr('specialty-ids').split(', ');
+        console.log(specialtyIds, specialty_id)
+        if (specialtyIds.includes(specialty_id)) {
             elem.removeClass('d-none');
         } else {
             elem.addClass('d-none');
