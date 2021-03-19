@@ -53,7 +53,7 @@ function showModal(event) {
     div.attr('id', 'clicked');
 }
 
-function hideModal(event) {
+function hideModal(_event) {
     $('.modal').modal('hide');
 }
 
@@ -65,7 +65,6 @@ function onSelectSpecialty(specialty_id) {
     for (const result of results) {
         const elem = $(result);
         const specialtyIds = elem.attr('specialty-ids').split(', ');
-        console.log(specialtyIds, specialty_id)
         if (specialtyIds.includes(specialty_id)) {
             elem.removeClass('d-none');
         } else {
@@ -96,7 +95,7 @@ function onSubmitForm(event) {
     const source_id = form.find('select[name=source]').val();
 
     const professional_id = clicked.attr('professional-id'); 
-    const specialty_id = clicked.attr('specialty-id'); 
+    const specialty_id = $('body select').val(); 
 
     const data = {name, birth, cpf, source_id, professional_id, specialty_id};
 
