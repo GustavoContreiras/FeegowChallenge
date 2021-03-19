@@ -33,3 +33,7 @@
         ```  
      ¹ If on Windows, you need to set the full directory "xampp/mysql/bin" in "path" on "environment variables"
 - Open the browser and access "localhost/web"
+
+If everything goes right, after making an appointment you should see this popup
+
+![image](https://user-images.githubusercontent.com/38460351/111849791-3dc6d680-88ed-11eb-9e21-c2ffd16d2901.png)
